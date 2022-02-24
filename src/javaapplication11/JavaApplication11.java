@@ -16,6 +16,7 @@ public class JavaApplication11 {
      * @param args the command line arguments
      */
     Seasons season;
+    String myStr;
     private boolean abc=true;
     public enum Seasons{
         FALL,
@@ -45,14 +46,20 @@ public class JavaApplication11 {
                 System.out.println("it is hot!");
                 break;
      }
+        public static boolean isSeason(myStr){
+            if (myStr==Season){
+                return true;
+            }
+            else return false;
+        }
     }
     import java.util.Scanner;
     public static void main(String[] args) {
         // TODO code application logic here
         // try to get the input (myStr) from the user
-        Scanner in = new Scanner(System.in);
+        Scanner mike = new Scanner(System.in);
         Sysytem.out.println("Enter your Season all Uppercase: );
-        String myStr= in.next();
+        String myStr= mike.next();
         JavaApplication11 test1= new JavaApplication11(Seasons.valueOf(myStr));
         test1.seasonDescription();
         //test1.isSeason();
