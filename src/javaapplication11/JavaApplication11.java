@@ -46,10 +46,13 @@ public class JavaApplication11 {
                 break;
      }
     }
+    import java.util.Scanner;
     public static void main(String[] args) {
         // TODO code application logic here
         // try to get the input (myStr) from the user
-        String myStr= "SUMMER";
+        Scanner in = new Scanner(System.in);
+        Sysytem.out.println("Enter your Season all Uppercase: );
+        String myStr= in.next();
         JavaApplication11 test1= new JavaApplication11(Seasons.valueOf(myStr));
         test1.seasonDescription();
         //test1.isSeason();
